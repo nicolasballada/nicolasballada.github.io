@@ -65,7 +65,7 @@ body{
     color: #474949;
     font-size: 4vw;
 }
-#about p{
+#about p a{
     display: flex;
     font-family: 'Raleway', sans-serif;
     font-size: 4vw; 

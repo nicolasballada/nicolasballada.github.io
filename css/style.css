@@ -41,6 +41,18 @@ body{
     padding-right: 2vw;
     margin-top: 5vw; 
 }
+#projects{
+    vertical-align: middle;
+    display: inline;
+    height: 100%;
+    text-decoration: underline;
+}
+#projects video{
+    float: left;
+    padding-left: 5vw;
+    padding-right: 2vw;
+    margin-top: 5vw; 
+}
 #contact{
       padding: 0;
       display: flex;
@@ -66,6 +78,19 @@ body{
     font-size: 4vw;
 }
 #about p a{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw; 
+    text-decoration: none;
+    height: 60vw;
+    vertical-align: middle;
+    padding-left: 2vw;
+    padding-right: 8vw;
+    margin-top: 5vw; 
+    word-wrap: break-word;
+    color: #474949;
+}
+#projects a{
     display: flex;
     font-family: 'Raleway', sans-serif;
     font-size: 4vw; 
@@ -141,6 +166,19 @@ body{
     word-wrap: break-word;
     color: #474949;
 }
+#projects a{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw; 
+    text-decoration: none;
+    height: 35vw;
+    vertical-align: middle;
+    padding-left: 2vw;
+    padding-right: 8vw;
+    margin-top: 5vw; 
+    word-wrap: break-word;
+    color: #474949;
+}
     
 #contact i{
     color: dimgray;
@@ -191,6 +229,19 @@ body{
     font-size: 1.5vw;
 }
 #about p{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8vw; 
+    text-decoration: none;
+    height: 22vw;
+    vertical-align: middle;
+    padding-left: 2vw;
+    padding-right: 8vw;
+    margin-top: 10vw; 
+    word-wrap:break-word;
+    color: #474949;
+}
+#projects a{
     display: flex;
     font-family: 'Raleway', sans-serif;
     font-size: 1.8vw; 

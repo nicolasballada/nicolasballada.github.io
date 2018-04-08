@@ -41,26 +41,25 @@ body{
     padding-right: 2vw;
     margin-top: 5vw; 
 }
+#projects li{
+    list-style: none;
+}
 #projects{
     vertical-align: middle;
     display: inline;
     height: 100%;
-    text-decoration: underline;
-}
-#projects video{
-    float: left;
-    padding-left: 5vw;
-    padding-right: 2vw;
-    margin-top: 5vw; 
+    text-decoration: none;
+    list-style: none;
 }
 #contact{
-      padding: 0;
+      padding: 10px;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center; 
 }
 #contact a{
+    padding-top: 10px;
     color: dimgray;
     text-decoration: none;
 }
@@ -93,13 +92,12 @@ body{
 #projects a{
     display: flex;
     font-family: 'Raleway', sans-serif;
-    font-size: 4vw; 
+    font-size: 3vw; 
     text-decoration: none;
-    height: 60vw;
     vertical-align: middle;
     padding-left: 2vw;
     padding-right: 8vw;
-    margin-top: 5vw; 
+    margin-top: 1vw; 
     word-wrap: break-word;
     color: #474949;
 }
@@ -169,13 +167,11 @@ body{
 #projects a{
     display: flex;
     font-family: 'Raleway', sans-serif;
-    font-size: 3vw; 
+    font-size: 2vw; 
     text-decoration: none;
-    height: 35vw;
     vertical-align: middle;
     padding-left: 2vw;
     padding-right: 8vw;
-    margin-top: 5vw; 
     word-wrap: break-word;
     color: #474949;
 }
@@ -244,13 +240,11 @@ body{
 #projects a{
     display: flex;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.8vw; 
+    font-size: 1.2vw; 
     text-decoration: none;
-    height: 22vw;
     vertical-align: middle;
     padding-left: 2vw;
     padding-right: 8vw;
-    margin-top: 10vw; 
     word-wrap:break-word;
     color: #474949;
 }

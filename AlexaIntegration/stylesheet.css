@@ -19,14 +19,28 @@ body {
 }
 
 /* Style the topnav links */
+
+.topnav p a {
+    width: 12%;
+    height: auto;
+    margin-left: 10px;
+    text-align: left;
+    padding: 14px 16px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
 .topnav a {
     float: center;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px 14px 0px;
     text-decoration: none;
+    font-size: 1.5em;
 }
+
+
 
 /* Change color on hover */
 

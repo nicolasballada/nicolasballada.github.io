@@ -21,13 +21,11 @@ body {
 /* Style the topnav links */
 
 .topnav p a {
-    width: 12%;
     height: auto;
     margin-left: 10px;
     text-align: left;
     padding: 14px 16px;
-    background-color: #FFFFFF;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .topnav a {

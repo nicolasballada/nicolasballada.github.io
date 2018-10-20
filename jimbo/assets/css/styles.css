@@ -10,25 +10,15 @@ html {
 body {
     font-family: "Helvetica", Arial, Verdana;
     height: 100%;
-}
-
-.index {
-    height: 100%;
-    width: 100%;
     background-color: #8AD2A2;
 }
 
 .index figure{
     margin: 0 auto;
-    padding: 2%;
     text-align: center;
 }
 
 .index p {
-    margin: 1% 0% 3% 0%;
-    font-size: 2.4em;
-}
-
-.index a {
-    font-size: 2.6em;
+    margin: 1% 3% 3% 3%;
+    font-size: 2em;
 }

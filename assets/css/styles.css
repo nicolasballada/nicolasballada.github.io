@@ -20,16 +20,12 @@ body {
 
 .index figure{
     margin: 0 auto;
-    padding: 10%;
+    padding: 5%;
 }
 
 .index p {
     margin: 1% 0% 3% 0%;
     font-size: 2.4em;
-}
-
-.index a {
-    font-size: 2.6em;
 }
 
 nav {
@@ -86,13 +82,16 @@ a:hover {
 
 a:active {
     color: #000000;
-    text-decoration: underline;
 }
 
-#currpage {
-    
+#currpage { 
     border-bottom: 3px solid;
     border-color: white;
+}
+
+#currpagem { 
+    color: lightcoral;
+    text-decoration: underline;
 }
 
 .content {
@@ -101,45 +100,6 @@ a:active {
     padding-top: 1.5%;
     padding-left: 10%;
     padding-right: 10%;
-}
-
-#home figure {
-    padding-top: 8%;
-    padding-left: 10%;
-    padding-bottom: 8%;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-}
-
-#home figure p {
-    padding-top: 2%;
-    font-size: 1.5em;
-    width: 50%;
-    float: left;
-}
-
-#me{
-    width: 25%;
-    float: left;
-    margin-right: 3%;
-}
-
-.contact {
-    display: block;
-    width: 80%
-}
-
-.contact img {
-    width: 8%;
-    padding-top: 5%;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.contact a:hover {
-    border-bottom: 3px solid;
-    border-color: red;
 }
 
 .title {
@@ -151,43 +111,6 @@ a:active {
     border-style: solid;
     border-color: black;
     border-width: 2px;
-}
-
-#personal {
-    padding: 3% 2% 1% 2%;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-}
-
-#personal h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-#personal p {
-    font-size: 1.3em;
-}
-
-#personal figure {
-    display: flex;
-    align-items: center;
-}
-
-#personal img,video {
-    border-style: solid;
-    border-width: 5px;
-    padding: 1px 1px 1px 1px;
-    float: left;
-    width: 20%;
-    margin-top: 30px;
-    margin-bottom: 30px
-}
-
-#personal figcaption {
-    margin: 10px;
-    width: 24%;
-    font-size: 1.2em;
 }
 
 footer {
@@ -226,6 +149,451 @@ footer a:hover {
 
 footer a:active {
     color: #E86F70;
+}
+
+
+/* Desktop*/
+@media only screen and (min-device-width: 1001px){
+    .dropdown {
+        display: none;
+    }
+    .index a {
+        color: red;
+        text-decoration: none;
+        font-size: 3.5em;
+    }
+    
+    .index figure {
+        text-align: center;    
+    }
+    
+    .index p {
+        font-size: 3em;
+    }
+    
+    #me{
+        width: 20%;
+        margin-bottom: 40px;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    #home figure {
+        padding-top: 8%;
+        padding-left: 10%;
+        padding-bottom: 8%;
+    }
+
+    #home figure p {
+        padding-top: 2%;
+        font-size: 2em;
+        line-height: 45px;
+        width: 50%;
+        float: left;
+    }
+    
+    #homepageImg{
+        width: 30%;
+    }
+    
+    .contact {
+        display: block;
+        width: 100%;
+    }
+
+    .contact img {
+        width: 8%;
+        padding-top: 5%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact a:hover {
+        border-bottom: 3px solid;
+        border-color: red;
+    }
+
+    #personal {
+        padding: 3% 2% 1% 2%;
+    }
+
+    #personal h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    #personal p {
+        font-size: 1.3em;
+    }
+
+    #personal figure {
+        display: flex;
+        align-items: center;
+    }
+
+    #personal img,video {
+        border-style: solid;
+        border-width: 5px;
+        padding: 1px 1px 1px 1px;
+        float: left;
+        width: 20%;
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+
+    #personal figcaption {
+        margin: 10px;
+        width: 24%;
+        font-size: 1.2em;
+    }
+}
+
+/* Half Screens */
+@media only screen and (min-device-width: 726px) and (max-width:1000px){
+    .dropdown {
+        display: none;
+    }
+    .index a {
+        color: red;
+        text-decoration: none;
+        font-size: 2.6em;
+    }
+    
+    .index figure {
+        text-align: center;    
+    }
+    
+    .title {
+        display: none;
+    }
+    
+    #me{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    #home figure {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #home figure p {
+        padding-top: 2%;
+        font-size: 2em;
+        line-height: 45px;
+    }
+    
+    #homepageImg{
+        width: 40%;
+    }
+    
+    .contact {
+        display: block;
+        width: 100%;
+    }
+
+    .contact img {
+        width: 10%;
+        padding-top: 5%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact a:hover {
+        border-bottom: 3px solid;
+        border-color: red;
+    }
+    
+    footer {
+        display: none;
+    }
+  
+    #personal {
+        padding: 3% 2% 1% 2%;
+    }
+
+    #personal h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    #personal p {
+        font-size: 1.4em;
+        margin-top: 20px;
+    }
+
+    #personal figure {
+        text-align: center;
+    }
+
+    #personal img,video {
+        border-style: solid;
+        border-width: 5px;
+        padding: 1px 1px 1px 1px;
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+
+    #personal figcaption {
+        margin: 10px;
+        width: 100%;
+        font-size: 1.6em;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-device-width: 321px) and (max-width:725px){
+    .index a {
+        color: red;
+        text-decoration: none;
+        font-size: 2.0em;
+    }
+    
+    .index figure {
+        text-align: center;    
+    }
+    
+    #me {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    
+    .index p {
+        font-size: 30px;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    .content {
+        display: none;
+    }
+        
+    footer {
+        display: none;
+    }
+    
+    .mobile {
+        margin: 0 auto;
+        
+    }
+
+    .mainMobile figure {
+        text-align: center;   
+    }
+    
+    .mainMobile img {
+        width: 60%;
+        margin-top: 30px;
+    }
+    
+    .mainMobile p {
+        margin: 20px;
+        line-height: 35px;
+        font-size: 23px;
+    }
+    
+    .projMobile {
+        padding: 0% 2% 5% 2%;
+    }
+    
+    .projMobile figure {
+        text-align: center;
+    }
+    
+    .projMobile img,video {
+        width: 60%;
+        margin-top: 30px;
+        border: solid;
+        border-width: 1px;
+    }
+    
+    .projMobile p {
+        margin: 10px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+    
+    
+    .dropbtn {
+        background-color: #986DFF;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #986DFF;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: #ddd;
+    }
+    
+    .show {
+        display: block;
+    }
+}
+
+
+/*Mobile*/
+@media only screen and (min-device-width: 0px) and (max-width: 320px){
+    .index a {
+        color: red;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .index figure {
+        text-align: center;    
+    }
+    
+    #me {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    
+    .index p {
+        font-size: 23px;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .content {
+        display: none;
+    }
+    
+    #personal {
+        display: none;
+    }
+        
+    footer {
+        display: none;
+    }
+    
+    .mobile {
+        margin: 0 auto;
+        
+    }
+
+    .mainMobile figure {
+        text-align: center;   
+    }
+    
+    .mainMobile img {
+        width: 60%;
+        margin-top: 30px;
+    }
+    
+    .mainMobile p {
+        margin: 10px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+    
+    .projMobile {
+        padding: 0% 2% 5% 2%;
+    }
+    
+    .projMobile figure {
+        text-align: center;
+    }
+    
+    .projMobile img,video {
+        width: 60%;
+        margin-top: 30px;
+        border: solid;
+        border-width: 1px;
+    }
+    
+    .projMobile p {
+        margin: 10px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+    
+    .dropbtn {
+        background-color: #986DFF;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #986DFF;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        width: 100%;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: #ddd;
+    }
+    
+    .show {
+        display: block;
+    }
 }
 
 

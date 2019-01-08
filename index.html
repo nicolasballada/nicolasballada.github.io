@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script src="https://use.fontawesome.com/092dfc5975.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta charset="utf-8"/>
-        <link rel="shortcut icon" type="image/png" href="./assets/media/favicon.png"/>
-        <title>Nicolas Salomon - Home</title>
-        <link rel="stylesheet" href="./assets/css/styles.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Aleo|Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <title>Nicolas A. Salomon</title>
+</head>
 
-        <div class="index">
-            <figure>
-                <img id="me" src="./assets/media/face.png" alt="Nicolas Salomon" title="Nicolas Salomon">
-
-                <p> Hi! I'm Nicolas Salomon. 
-                <p>I'm an Oregon State transfer pursuing a Bachelor of Science for Computer Science.</p>
-                <a href="./mainpage.html">Continue to Site!</a>
-            </figure>
-        </div>
-    </body>
-</html>
-
-    
-
+<body>
+    <div class="container">
+        <header class="row">
            
+            <div class="columns sixteen">
+                
+               
+                <nav role="primary">
+                    <ul id="navigation">
+                    	<li><a href="resume.pdf" target="_blank">Resume</a></li>
+						<li><a href="https://github.com/nsalomonb" target="_blank">Github</a></li>
+                    	<li><a href="https://www.linkedin.com/in/nsalomonb/" target="_blank">Linkedin</a></li>
+                    </ul>
+                </nav>
+                
+                <!--for non-mobile-->
+                <nav role="secondary">
+                    <ul id="navigation-responsive">
+                		<li><a href="resume.pdf" target="_blank">Resume</a></li>
+						<li><a href="https://github.com/nsalomonb" target="_blank">Github</a></li>
+                    	<li><a href="https://www.linkedin.com/in/nsalomonb/" target="_blank">Linkedin</a></li>
+                    </ul>
+                </nav>
+                
+            </div><!--column sixteen-->
+        </header>
+        
+        <div id="columns two">
+        <article id="about-content">
+           <h2><a href="mailto:salomonn@oregonstate.edu" target="_top">@nsalomonb</a></h2>
+           <p id="h2">Creating simulations inside a simulation</p>
+        </article><!--about-->
+        </div><!--column.two-->
+        
+        <div id="columns two">
+        <article id="lists-content">
+			<p>Student at Oregon State University pursuing a B.S. for Computer Science. Messing with hardware and programming on Java, Python, Ruby, C#, C++, Bash, and Linux. Sometimes, like now, I'm on HTML, CSS, and JavaScript.</p>
+			<h4><a href="./apparition/apparition.html/">Apparition</a></h4>
+			<p>Created <a href="./apparition/apparition.html/">Apparition</a>, an augmented reality creative art platform, at HoyaHacks 2018. It was the runner-up for Google’s Competition Strand.</p>
+    		<h4><a href="./AlexaIntegration/Alexa_Integration.html">Alexa Classroom Intergation</a></h4>
+			<p>Created <a href="./AlexaIntegration/Alexa_Integration.html">Alexa Classroom Intergation</a>, which executes Windows commands through Alexa, at HackPSU 2018. It won first place on Amazon’s Alexa Competition Strand.</p>
+    		<h4><a href="https://storage.googleapis.com/jimbomed.com/index.html">Jimbo</a></h4>
+			<p>Created <a href="https://storage.googleapis.com/jimbomed.com/index.html">Jimbo</a>, a Python-driven self-diagnosis health app geared towards college students, at BigRed//Hacks 2018. It was the runner-up for the Medical Competition Strand.</p>
+        </article><!--lists-->
+        </div><!--columns-->
+    </div><!--container-->
+</body>
+</html>

@@ -7,6 +7,7 @@ $email = '';
 $phone = '';
 $title = '';
 $author = '';
+$isbn = '';
 $paypal = '';
 $desc = '';
 
@@ -68,6 +69,14 @@ if(isset($_POST["submit"]))
  {
   $author = clean_text($_POST["author"]);
  }
+ if(empty($_POST["isbn"]))
+ {
+  $error .= '<p><label class="text-danger">ISBN Number is required</label></p>';
+ }
+ else
+ {
+  $isbn = clean_text($_POST["isbn"]);
+ }
  if(empty($_POST["paypal"]))
  {
   $error .= '<p><label class="text-danger">Paypal Link is required</label></p>';
@@ -100,7 +109,8 @@ if(isset($_POST["submit"]))
    'phone' => $phone, 
    'title' => $title,
    'author' => $author,
-   'paypal' => $paypal
+   'isbn' => $isbn,
+   'paypal' => $paypal,
    'desc' => $desc
   );
   fputcsv($file_open, $form_data);
@@ -110,6 +120,7 @@ if(isset($_POST["submit"]))
   $phone = '';
   $title = '';
   $author = '';
+  $isbn = '';
   $paypal = '';
   $desc = '';
  }
@@ -142,17 +153,29 @@ if(isset($_POST["submit"]))
       <label>Enter Email</label>
       <input type="text" name="email" class="form-control" placeholder="Enter Email" value="<?php echo $email; ?>" />
      </div>
-     <div class="form-group">
-      <label>Enter Subject</label>
-      <input type="text" name="subject" class="form-control" placeholder="Enter Subject" value="<?php echo $subject; ?>" />
-     </div>
     <div class="form-group">
       <label>Enter Phone Number</label>
       <input type="text" name="subject" class="form-control" placeholder="Enter Phone Number" value="<?php echo $phone; ?>" />
      </div>
+    <div class="form-group">
+      <label>Enter Book Title</label>
+      <input type="text" name="subject" class="form-control" placeholder="Enter Book Title" value="<?php echo $title; ?>" />
+     </div>
+    <div class="form-group">
+      <label>Enter Author Name</label>
+      <input type="text" name="subject" class="form-control" placeholder="Enter Author Name" value="<?php echo $author; ?>" />
+     </div>
+    <div class="form-group">
+      <label>Enter ISBN Number</label>
+      <input type="text" name="subject" class="form-control" placeholder="Enter ISBN Number" value="<?php echo $isbn; ?>" />
+     </div>
+    <div class="form-group">
+      <label>Enter Paypal Money Request Link</label>
+      <input type="text" name="subject" class="form-control" placeholder="Enter Paypal Money Request Link" value="<?php echo $paypal; ?>" />
+     </div>        
      <div class="form-group">
-      <label>Enter Message</label>
-      <textarea name="message" class="form-control" placeholder="Enter Message"><?php echo $message; ?></textarea>
+      <label>Enter Description of Use</label>
+      <textarea name="message" class="form-control" placeholder="Enter Description of Use"><?php echo $desc; ?></textarea>
      </div>
      <div class="form-group" align="center">
       <input type="submit" name="submit" class="btn btn-info" value="Submit" />

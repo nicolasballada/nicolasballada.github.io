@@ -291,3 +291,12 @@ footer ul li a:hover {
     width:60%;
     }
 }
+
+#er {
+    font-size: 3em;
+}
+
+#error {
+    font-size: 1.2em;
+    padding-bottom: 2em;
+}

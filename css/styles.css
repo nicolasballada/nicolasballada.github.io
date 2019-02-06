@@ -111,6 +111,16 @@ nav[role="primary"] {
     cursor: pointer;
 }
 
+nav[role="primary"] p {
+    position: fixed;
+    right: .5em;
+    top: 1em;
+    z-index: 1;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
 nav[role="primary"] ul {
     list-style: none;
     width:11.75em;
@@ -142,6 +152,12 @@ nav[role="primary"] li:first-child {
 
 #about-content {
 	width:95%;
+}
+
+#about-content h1 {
+    margin-bottom: .5em;
+	letter-spacing: .02em;
+    line-height: 1em;
 }
 
 #about-content #h2 {

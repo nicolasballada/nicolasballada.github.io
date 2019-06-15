@@ -19,7 +19,7 @@
 
 
 <div class="topnav">
-    <p><a href="../projects.html">Back to Main Site!</a></p>
+    <p><a href="../">Back to Main Site!</a></p>
 	<a href="#"> <img class="logo" src="Images/HACKPSULOGO.png"></a>
 </div>
 
@@ -38,15 +38,15 @@
 </div>
 
 <div class="row1">
-<center>
+<div style="text-align:center;">
 	<div class="video">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/FuuXxJ02kEs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	</div>
-	</center>
+	</div>
 </div>
 
 <div class="capabilities">
-<center><p class="capText">Capabilities!</p></center>
+<div style="text-align:center;"><p class="capText">Capabilities!</p></div>
 <div class="row">
   <div class="column" style="background-color:transparent;">
     <h2>Applications</h2>
@@ -87,8 +87,8 @@
 <div class="MeetTheTeam">
 
 <div class="MeetTheTeamText">
-	<p class="MTTLEFT" align="left">Meet the Team!</p>
-	<p class="MTTRIGHT" align="right"> Connect with us and lets create!</p>
+	<p class="MTTLEFT" aligntext="left">Meet the Team!</p>
+	<p class="MTTRIGHT" aligntext="right"> Connect with us and lets create!</p>
 </div>
 	
 	<div class="row">
@@ -96,7 +96,7 @@
     <div class="card">
       <img class="imgMTT" src="Images/josiel.jpg" alt="Josiel" style="width:100%; height: inherit">
       <div class="containerC">
-		<center>
+		<div style="text-align:center;">
 	        <h2>Josiel Delgadillo</h2>
 			<p class="title">Participant</p>
 			<p>Sophomore student attending Penn State Hazleton with a major in Information Sciences and Technology focusing on automation and app/software development.</p>
@@ -106,7 +106,7 @@
 		<a href="https://www.linkedin.com/in/josiel-delgadillo-80b0aa12a"><i class="fab fa-linkedin-in"></i></a>	
 			<br><br>
 			</div>
-		</center>
+		</div>
       </div>
     </div>
   </div>
@@ -118,7 +118,7 @@
 		
 		<img class="imtMTT" src="Images/gabriel.jpg" alt="Gabriel" style="width:100%; height: auto">
       <div class="container">
-		<center>        
+		<div style="text-align:center;">        
 		   <h2>Gabriel Ynoa</h2>
 			<p class="title">Participant</p>
 			<p>Senior student attending Penn State Hazleton with a major in Information Sciences and Technology and a minor in Security Risk Analysis, focusing on network administration and cyber security</p>
@@ -128,7 +128,7 @@
 		<a href="https://www.linkedin.com/in/gabrielynoa"><i class="fab fa-linkedin-in"></i></a>	
 			<br><br>
 			</div>
-		 </center>
+		 </div>
       </div>
     </div>
   </div>
@@ -136,17 +136,17 @@
     <div class="card">
      <img class="imagMTT" src="Images/nicolas.jpg" alt="Nicolas" style="width:100%; height: inherit">
       <div class="container">
-       <center>
+       <div style="text-align:center;">
 		   <h2>Nicolas Salomon</h2>
 <p class="title">Participant</p>
-			<p>Freshman student attending Rochester Institute of Technology with a major in Computing and Information Technology.</p>
-			<p>	nas1919@rit.edu</p>
+			<p>Freshman student attending Oregon State University with a major in Computing Science.</p>
+			<p>	salomonn@oregonstate.edu</p>
 			 <div social>
-		<a href="https://www.twitter.com/nsalomonb"><i class="fab fa-twitter"></i></a>			
+		<a href="https://www.nsalomonb.com"><i class="fa fa-info-circle" aria-hidden="true"></i></a>			
 		<a href="https://www.linkedin.com/in/nsalomon"><i class="fab fa-linkedin-in"></i></a>	
 			<br><br>
 			</div>
-        </center>
+        </div>
       </div>
     </div>
   </div>
@@ -158,15 +158,20 @@
 </div>
 
 
-<div class="footer">
-  <p><center>Copyright © 2018 Spring 2018</center></p>
-  <div class="row">
+<div class="footer" p[style*="display:inline;"]>
+  <p style="display:inline-block; text-align: center;">Copyright © </p> <p style="display:inline-block; text-align: center;" id="year">You shouldn't be seeing this.</p>
+<div class="row">
 		
 		
 	
   
   
 </div>
+
+<script type="text/javascript">
+		var d = new Date();
+		document.getElementById("year").innerHTML = d.getFullYear();
+</script>
 
 </body>
 </html>
